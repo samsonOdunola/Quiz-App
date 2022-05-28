@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: poppins;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  background-color: #06113c;
+  width:100%;
+  padding:1vw ;
+}
+nav ul{
+  list-style-type:none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+nav ul li .nav{
+  margin-left:6vh;
+  font-size: 1.1vw;
+  cursor:pointer;
+  color:#dddddd;
+  text-decoration: none;
+}
+nav ul li .nav:hover{
+  color:white;
+}
+.take-test{  
+  display: block;
+  margin:10vw auto;
+  padding:2vh 4vh;
+  border: 2px solid transparent;
+  background-color: #ff8c32;
+  font-size: 1.2vw;
+  font-weight: 500;
+  color:#06113c;
+  border-radius: 4vw;
+  cursor:pointer;
+  transition: all 0.2s linear;
+}
+.take-test:hover{
+  border:2px solid #ff8c32;
+  background-color: transparent;
+}
+.login-form{  
+  margin:5vh auto;  
+  width:50%;
+  text-align: center;
+  padding:2vh 3vh;
+  background-color: #dddddd;
+
+}
+.login-form input{
+  border:1px solid #06113c;
+  /* width:100%;   */
+  border-radius: 5px;
+  margin-top: 2vw;
+  font-size: 1.2vw;
+  padding:0.5vw;
+  outline:none;
+}
+.login-form .input-field{
+  width:100%;
+}
+.login-form label{
+  margin-left: 1vh; 
+  font-size: 1.1vw; 
+  
+}
+
+.login-form button{
+  display: block;
+  margin:1vw auto;
+  width:fit-content;
+  padding: 0.5vh 10vh;
+  border: 2px solid transparent;
+  background-color: #ff8c32;
+  font-size: 1.2vw;
+  color: #06113c;
+  border-radius: 3vw;
+  cursor: pointer;
+  font-weight: 500;
+}
+.login-form p{
+  margin:1vh 0;
+  font-size: 1.1vw;
+}
+.admin-btns{
+  
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+.admin-btns button{
+  width:fit-content;
+  margin-top: 1.6vh;
+  background-color: #ff8c32;
+  border: none;
+  border-radius: 2vh;
+  padding:0.5vw 1.4vw;
+  text-align:center;
+  font-size: 0.9vw;
+  cursor:pointer;
+}
+.admin-action-btn{
+  text-decoration: none;
+  color: #06113c;
 }
